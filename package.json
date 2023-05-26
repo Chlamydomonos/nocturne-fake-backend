@@ -1,0 +1,30 @@
+{
+  "name": "@nocturne/fake-backend",
+  "version": "1.0.0",
+  "description": "Fake backend of nocturne",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node-gyp rebuild && tsc --build",
+    "clean": "node-gyp clean",
+    "buildjs": "tsc --build"
+  },
+  "author": "Chlamydomonos",
+  "license": "ISC",
+  "dependencies": {
+    "node-addon-api": "^6.1.0",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.31.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "@types/validator": "^13.7.17",
+    "node-gyp": "^9.3.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "files": [
+    "dist",
+    "build/Release/ccLib.node"
+  ]
+}
